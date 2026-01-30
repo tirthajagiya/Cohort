@@ -1,4 +1,4 @@
-#Blog
+# Blog
 
 ### [DNS Record Types Explained](https://blog-by-tirth.hashnode.dev/dns-record-types-explained)
 ### [Getting Started with cURL](https://blog-by-tirth.hashnode.dev/getting-started-with-curl)
