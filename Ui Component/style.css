@@ -1,0 +1,235 @@
+:root{
+    --background:#111111;
+    --navbackground:#1c1c1c;
+    --primary:#ff7a18;
+    --text:#ffffff;
+    --border:#333;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--navbackground);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+}
+nav h2{
+    color: var(--primary);
+}
+
+nav div{
+    /* margin-left: 10px; */
+    display: flex;
+}
+
+#btn-menu{
+    display: none;
+}
+
+@media (max-width:600px) {
+    nav>div{
+        display: none;
+    }
+    #btn-menu{
+        display: block; 
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        justify-content: space-between;
+    }
+    main{
+        flex-direction: column;
+    }
+    .cards section{
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+    }
+}
+
+nav div button{
+    font-size: 16px;
+    padding: 4px 8px;
+    background-color: var(--primary);
+    border:2px solid var(--border);
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+button:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 0px;
+}
+
+nav div button:nth-child(3){
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 0px;
+}
+
+nav>button{
+    padding: 4px 8px;
+    border:2px solid var(--border);
+    border-radius: 8px;
+    font-size:20px;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+main{
+    width: 80%;
+    display: flex;
+    margin: 30px auto;
+    gap: 30px;
+}
+.main-left{
+    width: 100%;
+}
+
+main img{
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+.main-right{
+    text-align: center;
+    width: 100%;
+}
+.main-right p{
+    font-family: Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.main-right button{
+    width: 120px;
+    padding: 8px 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--primary);
+    margin: 20px auto;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    border: 1px solid var(--border);
+}
+
+.cards{
+    width: 80%;
+    margin: 8px auto;
+}
+.cards>h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px ;
+}
+
+.cards section{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 70px; */
+    width: 100%;
+    gap: 20px;
+}
+.cards section div{
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    /* padding: 8px 16px; */
+    box-shadow:  var(--primary);
+    position: relative;
+}
+
+.cards section div img{
+    background-color: var(--navbackground);
+    border-radius: 5px;
+    width: 297px;
+}
+
+.cards section div h3{
+    position: absolute;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.cards section div button{
+    padding: 8px 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--navbackground);
+    color: var(--text);
+}
+
+footer{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbackground);
+    padding: 20px 2rem ;
+    border-left: 3px solid var(--border);
+    border-right: 3px solid var(--border);
+    border-bottom: 3px solid var(--border);
+    border-radius: 8px;
+}
+
+.footer-left{
+    display: flex;
+    color:gray;
+}
+
+.footer-left-menu ul{
+    list-style-type: none;
+}
+.footer-left-menu ul li{
+    padding: 4px 8px;
+}
+.footer-right-menu ul{
+    list-style-type: none;
+}
+.footer-right-menu ul li{
+    padding: 4px 0px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right img{
+    border: 2px solid var(--border);
+    margin: 8px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-right h3{
+    color: var(--primary);
+}
